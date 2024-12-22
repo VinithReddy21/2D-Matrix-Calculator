@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  background: linear-gradient(45deg, #000, #333);
+  padding: 1em 0;
+  color: #fff;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.app-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid gold;
+}
+
+/* Main Content Styles */
+main {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+  color: gold;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="number"] {
+  margin: 0 5px;
+  padding: 5px;
+  width: 70px;
+  border: 1px solid #555;
+  border-radius: 4px;
+  background: #333;
+  color: #fff;
+}
+
+input[type="number"]:focus {
+  outline: 2px solid gold;
+}
+
+/* Button Styles */
+button {
+  display: inline-block;
+  margin: 10px 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #444;
+  color: gold;
+  border: 1px solid gold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #666;
+  transform: scale(1.05);
+}
+
+button:focus {
+  outline: 2px solid gold;
+}
+
+/* Matrix Styles */
+.matrix {
+  display: grid;
+  gap: 5px;
+}
+
+.matrix input {
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  background: #222;
+  border: 1px solid gold;
+  color: #fff;
+  border-radius: 3px;
+}
+
+/* Result Container */
+#result-container {
+  background: #222;
+  padding: 10px;
+  border: 1px solid gold;
+  border-radius: 5px;
+  color: #fff;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid gold;
+  text-align: center;
+  padding: 10px;
+}

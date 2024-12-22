@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2D Matrix Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="image.png" alt="App Logo" class="app-logo">
+    </div>
+    <h1>2D Matrix Calculator</h1>
+    <p>Perform matrix operations with ease!</p>
+  </header>
+
+  <main>
+    <section id="matrix-setup">
+      <h2>Matrix Dimensions</h2>
+      <div>
+        <label for="rowsA">Matrix A (Rows × Columns):</label>
+        <input type="number" id="rowsA" placeholder="Rows" min="1">
+        <input type="number" id="colsA" placeholder="Columns" min="1">
+        <button onclick="generateMatrixInput('A')">Generate Matrix A</button>
+      </div>
+      <div>
+        <label for="rowsB">Matrix B (Rows × Columns):</label>
+        <input type="number" id="rowsB" placeholder="Rows" min="1">
+        <input type="number" id="colsB" placeholder="Columns" min="1">
+        <button onclick="generateMatrixInput('B')">Generate Matrix B</button>
+      </div>
+    </section>
+
+    <section id="matrix-input">
+      <h2>Enter Matrices</h2>
+      <div id="matrixA-container"></div>
+      <div id="matrixB-container"></div>
+    </section>
+
+    <section id="operations">
+      <h2>Choose Operation</h2>
+      <button onclick="addMatrices()">Addition</button>
+      <button onclick="subtractMatrices()">Subtraction</button>
+      <button onclick="multiplyMatrices()">Multiplication</button>
+      <button onclick="transposeMatrix('A')">Transpose A</button>
+      <button onclick="transposeMatrix('B')">Transpose B</button>
+      <button onclick="calculateDeterminant('A')">Determinant A</button>
+      <button onclick="calculateDeterminant('B')">Determinant B</button>
+      <button onclick="invertMatrix('A')">Invert A</button>
+      <button onclick="invertMatrix('B')">Invert B</button>
+    </section>
+
+    <section id="output">
+      <h2>Result</h2>
+      <div id="result-container">Results will appear here...</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 2D Matrix Calculator. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
